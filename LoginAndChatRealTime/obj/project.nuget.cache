@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LwwmLnuRDpD2soklITt8piLJ8pnZ8xelmJ4r7NnViMj16bSGI1aQ66s1vtN/70FI7yMlt2s0CxjK1nGH7mVAJQ==",
+  "dgSpecHash": "aLHEidN7QLywUJ/EnsWFFfuD/s1i+boxxOC7d53nNrWdoxaRIqtiDLvyr5MkXXQ8iJgv+3+3gsIDh5kuL89xhA==",
   "success": true,
-  "projectFilePath": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\LoginAndChatRealTime.csproj",
+  "projectFilePath": "D:\\LoginAndChatRealTime\\LoginAndChatRealTime\\LoginAndChatRealTime.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",

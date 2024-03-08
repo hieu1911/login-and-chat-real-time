@@ -56,11 +56,11 @@
             {
                 @if (Model.Sender.Id == message.SenderId)
                 {
-                    <li>@message.Content</li>
+                    <li class="sender-message">@message.Content</li>
                 }
                 else
                 {
-                    <li class="sender-message">@message.Content</li>
+                    <li>@message.Content</li>
                 }
             }
         </ul>
@@ -84,10 +84,15 @@
 
     $("#btn-send").prop("disabled", true)
 
-    connection.on("ReceiveMessage", function (userName, message) {
+    connection.on("ReceiveMessage", function (userName, message, id) {
         console.log(message)
         var li = document.createElement("li");
-        li.textContent = `${userName}: ${message}`;
+        li.textContent = message;
+
+        if (senderId == id) {
+            li.classList.add("sender-message");
+        }
+
         $("#message-list").append(li);
     });
 

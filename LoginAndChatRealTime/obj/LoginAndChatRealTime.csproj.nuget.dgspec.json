@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\LoginAndChatRealTime.csproj": {}
+    "D:\\LoginAndChatRealTime\\LoginAndChatRealTime\\LoginAndChatRealTime.csproj": {}
   },
   "projects": {
-    "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\LoginAndChatRealTime.csproj": {
+    "D:\\LoginAndChatRealTime\\LoginAndChatRealTime\\LoginAndChatRealTime.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\LoginAndChatRealTime.csproj",
+        "projectUniqueName": "D:\\LoginAndChatRealTime\\LoginAndChatRealTime\\LoginAndChatRealTime.csproj",
         "projectName": "LoginAndChatRealTime",
-        "projectPath": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\LoginAndChatRealTime.csproj",
+        "projectPath": "D:\\LoginAndChatRealTime\\LoginAndChatRealTime\\LoginAndChatRealTime.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\obj\\",
+        "outputPath": "D:\\LoginAndChatRealTime\\LoginAndChatRealTime\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

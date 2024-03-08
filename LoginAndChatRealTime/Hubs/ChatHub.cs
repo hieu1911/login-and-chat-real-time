@@ -24,7 +24,7 @@ namespace LoginAndChatRealTime.Hubs
 
         public async Task SendMessageToGroup(string groupName, string userName, string message, int senderId, int recieveId)
         {
-            await Clients.Group(groupName).SendAsync("ReceiveMessage", userName, message);
+            await Clients.Group(groupName).SendAsync("ReceiveMessage", userName, message, senderId);
 
             _messageService.CreateMessage(senderId, recieveId, message);
         }
