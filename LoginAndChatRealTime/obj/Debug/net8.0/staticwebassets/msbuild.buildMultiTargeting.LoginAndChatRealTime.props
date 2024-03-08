@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LoginAndChatRealTime.props" />
+</Project>

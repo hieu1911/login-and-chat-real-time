@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SDS\\LoginAndChatRealTime\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|d:\\sds\\loginandchatrealtime\\loginandchatrealtime\\views\\message\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|solutionrelative:loginandchatrealtime\\views\\message\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|d:\\sds\\loginandchatrealtime\\loginandchatrealtime\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|solutionrelative:loginandchatrealtime\\services\\messageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|d:\\sds\\loginandchatrealtime\\loginandchatrealtime\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|solutionrelative:loginandchatrealtime\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|d:\\sds\\loginandchatrealtime\\loginandchatrealtime\\models\\messageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|solutionrelative:loginandchatrealtime\\models\\messageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|d:\\sds\\loginandchatrealtime\\loginandchatrealtime\\entities\\messagedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|solutionrelative:loginandchatrealtime\\entities\\messagedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|d:\\sds\\loginandchatrealtime\\loginandchatrealtime\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|solutionrelative:loginandchatrealtime\\entities\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|d:\\sds\\loginandchatrealtime\\loginandchatrealtime\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|solutionrelative:loginandchatrealtime\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|d:\\sds\\loginandchatrealtime\\loginandchatrealtime\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|solutionrelative:loginandchatrealtime\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|d:\\sds\\loginandchatrealtime\\loginandchatrealtime\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|solutionrelative:loginandchatrealtime\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|d:\\sds\\loginandchatrealtime\\loginandchatrealtime\\interfaces\\imessageserivce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|solutionrelative:loginandchatrealtime\\interfaces\\imessageserivce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|d:\\sds\\loginandchatrealtime\\loginandchatrealtime\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6068BA3E-5125-43ED-8297-5B3126F13022}|LoginAndChatRealTime\\LoginAndChatRealTime.csproj|solutionrelative:loginandchatrealtime\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 444,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MessageDetail.cs",
+              "DocumentMoniker": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Entities\\MessageDetail.cs",
+              "RelativeDocumentMoniker": "LoginAndChatRealTime\\Entities\\MessageDetail.cs",
+              "ToolTip": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Entities\\MessageDetail.cs",
+              "RelativeToolTip": "LoginAndChatRealTime\\Entities\\MessageDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T09:48:07.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MessageViewModel.cs",
+              "DocumentMoniker": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Models\\MessageViewModel.cs",
+              "RelativeDocumentMoniker": "LoginAndChatRealTime\\Models\\MessageViewModel.cs",
+              "ToolTip": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Models\\MessageViewModel.cs",
+              "RelativeToolTip": "LoginAndChatRealTime\\Models\\MessageViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T07:42:56.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MessageController.cs",
+              "DocumentMoniker": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Controllers\\MessageController.cs",
+              "RelativeDocumentMoniker": "LoginAndChatRealTime\\Controllers\\MessageController.cs",
+              "ToolTip": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Controllers\\MessageController.cs",
+              "RelativeToolTip": "LoginAndChatRealTime\\Controllers\\MessageController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAA7wDQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T07:41:49.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "LoginAndChatRealTime\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "LoginAndChatRealTime\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwAoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T07:41:44.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Program.cs",
+              "RelativeDocumentMoniker": "LoginAndChatRealTime\\Program.cs",
+              "ToolTip": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Program.cs",
+              "RelativeToolTip": "LoginAndChatRealTime\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAC4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T07:23:31.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "LoginAndChatRealTime\\Hubs\\ChatHub.cs",
+              "ToolTip": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "LoginAndChatRealTime\\Hubs\\ChatHub.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAowBwAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T07:23:08.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Views\\Message\\Index.cshtml",
+              "RelativeDocumentMoniker": "LoginAndChatRealTime\\Views\\Message\\Index.cshtml",
+              "ToolTip": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Views\\Message\\Index.cshtml",
+              "RelativeToolTip": "LoginAndChatRealTime\\Views\\Message\\Index.cshtml",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAUwCYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-08T07:13:49.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MessageService.cs",
+              "DocumentMoniker": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Services\\MessageService.cs",
+              "RelativeDocumentMoniker": "LoginAndChatRealTime\\Services\\MessageService.cs",
+              "ToolTip": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Services\\MessageService.cs",
+              "RelativeToolTip": "LoginAndChatRealTime\\Services\\MessageService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCEAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T04:41:59.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Entities\\Message.cs",
+              "RelativeDocumentMoniker": "LoginAndChatRealTime\\Entities\\Message.cs",
+              "ToolTip": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Entities\\Message.cs",
+              "RelativeToolTip": "LoginAndChatRealTime\\Entities\\Message.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T07:09:45.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IMessageSerivce.cs",
+              "DocumentMoniker": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Interfaces\\IMessageSerivce.cs",
+              "RelativeDocumentMoniker": "LoginAndChatRealTime\\Interfaces\\IMessageSerivce.cs",
+              "ToolTip": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Interfaces\\IMessageSerivce.cs",
+              "RelativeToolTip": "LoginAndChatRealTime\\Interfaces\\IMessageSerivce.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T09:24:36.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "LoginAndChatRealTime\\Entities\\User.cs",
+              "ToolTip": "D:\\SDS\\LoginAndChatRealTime\\LoginAndChatRealTime\\Entities\\User.cs",
+              "RelativeToolTip": "LoginAndChatRealTime\\Entities\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T07:12:31.567Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
