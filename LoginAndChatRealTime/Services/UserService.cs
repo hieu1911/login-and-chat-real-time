@@ -1,7 +1,6 @@
 ﻿using LoginAndChatRealTime.Entities;
 using LoginAndChatRealTime.Helper;
 using LoginAndChatRealTime.Interfaces;
-using LoginAndChatRealTime.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace LoginAndChatRealTime.Services

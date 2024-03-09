@@ -1,7 +1,6 @@
 ﻿using LoginAndChatRealTime.Helper;
 using LoginAndChatRealTime.Models;
 using Microsoft.AspNetCore.Mvc;
-using LoginAndChatRealTime.Entities;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
@@ -28,10 +27,6 @@ namespace LoginAndChatRealTime.Controllers
             using (var db = new MyDbContext()) 
             {
                 var user = _userService.GetUser(loginViewModel.UserName, loginViewModel.Password);
-                if (user is null) 
-                {
-                    return Redirect("/Login");
-                }
 
                 var claims = new List<Claim>
                 {
@@ -41,14 +36,22 @@ namespace LoginAndChatRealTime.Controllers
 
                 var claimsIdentity = new ClaimsIdentity(
                     claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
                 var authProperties = new AuthenticationProperties { };
+
                 HttpContext.SignInAsync(
                     CookieAuthenticationDefaults.AuthenticationScheme,
                     new ClaimsPrincipal(claimsIdentity),
                     authProperties);
-            }
 
-            return Redirect("/");
+                return Redirect("/");
+            }
+        }
+
+        public async Task Logout(string returnUrl = null)
+        {
+            await HttpContext.SignOutAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme);
         }
     }
 }

@@ -16,7 +16,9 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
         options.SlidingExpiration = true;
         options.AccessDeniedPath = "/Forbidden/";
+        options.LoginPath = "/Login";
     });
+
 
 builder.Services.AddScoped<IUserSerivce, UserService>(); 
 builder.Services.AddScoped<IMessageSerivce, MessageService>();
@@ -36,8 +38,6 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
-app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",

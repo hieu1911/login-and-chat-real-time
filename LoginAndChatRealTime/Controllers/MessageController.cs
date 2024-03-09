@@ -3,9 +3,11 @@ using LoginAndChatRealTime.Models;
 using LoginAndChatRealTime.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LoginAndChatRealTime.Controllers
 {
+    [Authorize]
     public class MessageController : Controller
     {
         private readonly IHttpContextAccessor _context;
@@ -21,10 +23,6 @@ namespace LoginAndChatRealTime.Controllers
         public IActionResult Index(string roomName, int roomId)
         {
             var context = _context.HttpContext;
-            if (!context.User.Identity.IsAuthenticated)
-            {
-                return Redirect("/Login");
-            }
 
             var userId = int.Parse(context.User.FindFirst(type: "Id").Value);
             var userName = context.User.FindFirst(ClaimTypes.Name).Value;

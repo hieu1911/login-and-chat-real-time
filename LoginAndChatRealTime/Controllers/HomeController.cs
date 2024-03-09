@@ -1,11 +1,13 @@
 using LoginAndChatRealTime.Interfaces;
 using LoginAndChatRealTime.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Security.Claims;
 
 namespace LoginAndChatRealTime.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -30,14 +32,10 @@ namespace LoginAndChatRealTime.Controllers
         public IActionResult Index()
         {
             var context = _context.HttpContext;
-            if (!context.User.Identity.IsAuthenticated)
-            {
-                return Redirect("/Login");
-            }
 
             var userName = context.User.FindFirst(type: ClaimTypes.Name).Value;
             var userId = int.Parse(context.User.FindFirst(type: "Id").Value);
-
+            
             var rooms = _roomService.GetRoomsByUserId(userId);
 
             var model = new HomeViewModel()
