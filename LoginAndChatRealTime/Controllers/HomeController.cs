@@ -14,11 +14,17 @@ namespace LoginAndChatRealTime.Controllers
 
         private readonly IUserSerivce _userService;
 
-        public HomeController(ILogger<HomeController> logger, IHttpContextAccessor context, IUserSerivce userSerivce)
+        private readonly IRoomService _roomService;
+
+        public HomeController(ILogger<HomeController> logger, 
+            IHttpContextAccessor context, 
+            IUserSerivce userSerivce,
+            IRoomService roomSerivce)
         {
             _logger = logger;
             _context = context;
             _userService = userSerivce;
+            _roomService = roomSerivce;
         }
 
         public IActionResult Index()
@@ -29,16 +35,16 @@ namespace LoginAndChatRealTime.Controllers
                 return Redirect("/Login");
             }
 
-            var name = context.User.FindFirst(type: ClaimTypes.Name).Value;
-            var id = int.Parse(context.User.FindFirst(type: "Id").Value);
+            var userName = context.User.FindFirst(type: ClaimTypes.Name).Value;
+            var userId = int.Parse(context.User.FindFirst(type: "Id").Value);
 
-            var users = _userService.GetUsersExceptId(id);
+            var rooms = _roomService.GetRoomsByUserId(userId);
 
             var model = new HomeViewModel()
             {
-                UserId = id,
-                UserName = name,
-                Users = users
+                UserId = userId,
+                UserName = userName,
+                Rooms = rooms
             };
 
             return View(model);

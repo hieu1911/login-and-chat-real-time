@@ -47,20 +47,20 @@
     <div class="message-wrapper">
         <h3 class="text-center mb-3">Message</h3>
         <div class="d-flex text-center mb-2">
-            <span class="avatar">@Model.Reciever.Name[0]</span>
-            <span class="text-center d-inline-flex align-items-center">@Model.Reciever.Name</span>
+            <span class="avatar">@Model.Room.RoomName[0]</span>
+            <span class="text-center d-inline-flex align-items-center">@Model.Room.RoomName</span>
         </div>
         <hr/>
         <ul class="message-list" id="message-list">
             @foreach (var message in Model.Messages)
             {
-                @if (Model.Sender.Id == message.SenderId)
+                @if (Model.User.UserId == message.UserId)
                 {
                     <li class="sender-message">@message.Content</li>
                 }
                 else
                 {
-                    <li>@message.Content</li>
+                    <li>@message.User.UserName: @message.Content</li>
                 }
             }
         </ul>
@@ -76,30 +76,27 @@
 
 <script>
     var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
-    var groupName = @Html.Raw(Json.Serialize(Model.GroupName));
-    var userName = @Html.Raw(Json.Serialize(Model.Sender.Name));
-    var senderId = @Html.Raw(Json.Serialize(Model.Sender.Id));
-    var recieveId = @Html.Raw(Json.Serialize(Model.Reciever.Id));
-    console.log(userName, senderId, recieveId);
+    var roomName = @Html.Raw(Json.Serialize(Model.Room.RoomName));
+    var userId = @Html.Raw(Json.Serialize(Model.User.UserId));
 
     $("#btn-send").prop("disabled", true)
 
     connection.on("ReceiveMessage", function (userName, message, id) {
-        console.log(message)
         var li = document.createElement("li");
-        li.textContent = message;
 
-        if (senderId == id) {
+        if (userId == id) {
+            li.textContent = message;
             li.classList.add("sender-message");
+        }
+        else
+        {
+            li.textContent = `${userName}: ${message}`
         }
 
         $("#message-list").append(li);
     });
 
     connection.start().then(function () {
-        connection.invoke("AddToGroup", groupName).catch(function (err) {
-            return console.error(err.toString());
-        });
         $("#btn-send").prop("disabled", false)
     }).catch(function (err) {
         return console.error(err.toString());
@@ -107,13 +104,9 @@
 
     $("#btn-send").on("click", function (event) {
         var message = $("#message").val();
-        connection.invoke("SendMessageToGroup", groupName, userName, message, senderId, recieveId).catch(function (err) {
+        connection.invoke("SendMessageToGroup", roomName, message).catch(function (err) {
             return console.error(err.toString());
         });
         event.preventDefault();
     });
-
-    // connection.invoke("RemoveFromGroup", @Model.GroupName).catch(function (err) {
-    //     return console.error(err.toString());
-    // });
 </script>

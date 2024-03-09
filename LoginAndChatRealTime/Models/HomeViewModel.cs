@@ -8,6 +8,6 @@ namespace LoginAndChatRealTime.Models
 
         public string UserName { get; set; }
 
-        public List<User> Users { get; set; }
+        public List<Room> Rooms { get; set; }
     }
 }

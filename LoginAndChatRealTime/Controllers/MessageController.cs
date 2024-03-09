@@ -18,7 +18,7 @@ namespace LoginAndChatRealTime.Controllers
             _messageService = messageService;
         }
 
-        public IActionResult Index(int id, string userName)
+        public IActionResult Index(string roomName, int roomId)
         {
             var context = _context.HttpContext;
             if (!context.User.Identity.IsAuthenticated)
@@ -26,39 +26,28 @@ namespace LoginAndChatRealTime.Controllers
                 return Redirect("/Login");
             }
 
-            var senderId = int.Parse(context.User.FindFirst(type: "Id").Value);
-            var senderName = context.User.FindFirst(ClaimTypes.Name).Value;
+            var userId = int.Parse(context.User.FindFirst(type: "Id").Value);
+            var userName = context.User.FindFirst(ClaimTypes.Name).Value;
 
-            var messages = _messageService.GetMessages(senderId, id);
+            var messages = _messageService.GetMessages(roomId);
 
-            var reciever = new User()
+            var user = new User()
             {
-                Id = id,
-                Name = userName
+                UserId = userId,
+                UserName = userName
             };
 
-            var sender = new User()
+            var room = new Room()
             {
-                Id = senderId,
-                Name = senderName
+                RoomId = roomId,
+                RoomName = roomName
             };
-
-            var groupName = "";
-            if (id < senderId)
-            {
-                groupName = $"Group{id}{senderId}";
-            }
-            else
-            {
-                groupName = $"Group{senderId}{id}";
-            }
 
             var messageViewModel = new MessageViewModel()
             {
-                Messages = messages,
-                Sender = sender,
-                Reciever = reciever,
-                GroupName = groupName
+                User = user,
+                Room = room,
+                Messages = messages
             };
 
             return View(messageViewModel);

@@ -35,8 +35,8 @@ namespace LoginAndChatRealTime.Controllers
 
                 var claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.Name, user.Name),
-                    new Claim("Id", user.Id.ToString()),
+                    new Claim(ClaimTypes.Name, user.UserName),
+                    new Claim("Id", user.UserId.ToString()),
                 };
 
                 var claimsIdentity = new ClaimsIdentity(

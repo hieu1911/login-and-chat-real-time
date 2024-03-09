@@ -6,6 +6,6 @@ namespace LoginAndChatRealTime.Interfaces
     {
         public User? GetUser(string userName, string password);
 
-        public List<User> GetUsersExceptId(int id);
+        public User GetUser(int id);
     }
 }

@@ -9,9 +9,11 @@ namespace LoginAndChatRealTime.Helper
 
         public DbSet<Message> Messages { get; set; }
 
+        public DbSet<Room> Rooms { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var connectionString = "Server=localhost;Port=3306;Database=chat_real_time;Uid=root;Pwd=123456";
+            var connectionString = "Server=localhost;Port=3306;Database=conversation;Uid=root;Pwd=123456";
             optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
     }

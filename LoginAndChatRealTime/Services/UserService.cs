@@ -2,6 +2,7 @@
 using LoginAndChatRealTime.Helper;
 using LoginAndChatRealTime.Interfaces;
 using LoginAndChatRealTime.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace LoginAndChatRealTime.Services
 {
@@ -11,26 +12,20 @@ namespace LoginAndChatRealTime.Services
         {
             using (var db = new MyDbContext())
             {
-                var users = db.Users.Where<User>(u => (u.Name == userName) &&
-                    (u.Password == password)).Take(1).ToList();
-
-                if (!users.Any())
-                {
-                    return null;
-                }
-
-                return users[0];
+                var user = db.Users.SingleOrDefault(u => u.UserName == userName && u.Password == password);
+                return user;
             }
         }
 
-        public List<User> GetUsersExceptId(int id)
+        public User GetUser(int id)
         {
             using (var db = new MyDbContext())
             {
-                var users = db.Users.Where(u => u.Id != id).ToList();
-
-                return users;
+                var user = db.Users.Include(u => u.UserRooms).ThenInclude(ur => ur.Room)
+                    .SingleOrDefault(u => u.UserId == id);
+                return user;
             }
         }
+
     }
 }

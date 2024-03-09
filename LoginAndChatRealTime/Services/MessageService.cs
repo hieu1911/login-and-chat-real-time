@@ -1,21 +1,24 @@
 ﻿using LoginAndChatRealTime.Entities;
 using LoginAndChatRealTime.Helper;
 using LoginAndChatRealTime.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace LoginAndChatRealTime.Services
 {
     public class MessageService : IMessageSerivce
     {
-        public void CreateMessage(int senderId, int recieveId, string content)
+        public void CreateMessage(int userId, string roomName, string content)
         {
             using (var db = new MyDbContext())
             {
+                var room = db.Rooms.SingleOrDefault(r => r.RoomName == roomName);
+
                 var message = new Message()
                 {
-                    SenderId = senderId,
-                    RecieveId = recieveId,
+                    UserId = userId,
+                    RoomId = room.RoomId,
                     Content = content,
-                    TimeStamp = DateTime.Now
+                    Timestamp = DateTime.Now
                 };
 
                 db.Messages.Add(message);
@@ -23,15 +26,16 @@ namespace LoginAndChatRealTime.Services
             }
         }
 
-        public List<Message> GetMessages(int senderId, int recieveId)
+        public List<Message> GetMessages(int roomId)
         {
             using (var db = new MyDbContext())
             {
-                var messages = db.Messages.Where<Message>(m => 
-                (m.SenderId == senderId &&
-                m.RecieveId == recieveId) ||
-                (m.SenderId == recieveId && 
-                m.RecieveId == senderId)).ToList();
+                var messages = db.Messages
+                    .Include(m => m.User)
+                    .Include(m => m.Room)
+                    .Where(m => m.RoomId == roomId)
+                    .OrderBy(m => m.Timestamp)
+                    .ToList();
 
                 return messages;
             }

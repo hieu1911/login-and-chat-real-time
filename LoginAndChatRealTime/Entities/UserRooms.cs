@@ -2,13 +2,11 @@
 
 namespace LoginAndChatRealTime.Entities
 {
-    public class Message
+    public class UserRooms
     {
         [Key]
-        public int MessageId { get; set; }
-
-        public string Content { get; set; }
-
+        public int UserRoomId { get; set; }
+        
         public int UserId { get; set; }
 
         public User User { get; set; }
@@ -16,7 +14,5 @@ namespace LoginAndChatRealTime.Entities
         public int RoomId { get; set; }
 
         public Room Room { get; set; }
-
-        public DateTime Timestamp { get; set; }
     }
 }
